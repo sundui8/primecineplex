@@ -70,7 +70,7 @@ function MoviesFromJson(jsonUrl) {
 }
 
 window.onload = function() {
-    MoviesFromJson("json/data.json");
+    MoviesFromJson("/json/data.json");
 };
 document.getElementById("prev-btn").addEventListener("click", prevSlide);
 document.getElementById("next-btn").addEventListener("click", nextSlide);
