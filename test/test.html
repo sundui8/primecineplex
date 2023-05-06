@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Owl Carousel Example</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <style>
+    .owl-carousel .item img {
+      cursor: pointer;
+    }
+
+    #current-image {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .owl-prev,
+    .owl-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 40px;
+      color: #FFF;
+      cursor: pointer;
+      z-index: 999;
+    }
+
+    .owl-prev {
+      left: 0;
+    }
+
+    .owl-next {
+      right: 0;
+    }
+
+    .carousel-container {
+      position: relative;
+    }
+
+    #current-image-container {
+      position: relative;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    #current-image-container img {
+      max-height: 500px;
+      max-width: 100%;
+      cursor: pointer;
+    }
+    .owl-carousel .item img.selected {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 10px rgba(128, 28, 28, 0.5);
+    }
+    .owl-carousel .item img:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+    .owl-carousel .item img.selected:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+  </style>
+</head>
+<body>
+    <div class="owl-carousel"></div>
+    <div class="owl-prev">&#10094;</div>
+    <div class="owl-next">&#10095;</div>
+    <div id="current-image-container">
+      <img id="current-image" src="" alt="">
+      <p class="description"></p>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $.getJSON('mydata.json', function(data){
+      var owlHTML = '';
+
+      for (var i = 0; i < data.length; i++) {
+        owlHTML += '<div class="item"><img  width="170px" height="280px"  src="' + data[i].portrait + '"></div>';
+      }
+      
+      $('.owl-carousel').html(owlHTML);
+
+      $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        responsive:{
+          0:{
+            items:1
+          },
+          600:{
+            items:6
+          } 
+        }
+      });
+
+      var firstImageSrc = data[0].image;
+      var firstImageDescription = data[0].description;
+
+      $('#current-image').attr('src', $('.owl-carousel .item').eq(0).find('img').attr('src'));
+      $('#current-image-container .description').html($('.owl-carousel .item').eq(0).find('p').html());
+
+      // Add event listener to images
+      $('.owl-carousel .item img').on('click', function(){
+        // Get index of clicked image
+        var index = $('.owl-carousel .item img').index(this);
+        
+        // Set clicked image as current image
+        var src = $(this).attr('src');
+        $('#current-image').attr('src', src);
+        
+        // Set clicked image as selected and remove "selected" class from all other images
+        $('.owl-carousel .item img').removeClass('selected');
+        $(this).addClass('selected');
+        
+        var description = $('.owl-carousel .item').eq(index).find('p').html();
+        $('#current-image-container .description').html(description);   
+      });
+
+      // Add event listener to img tag that displays images
+
+    
+
+      // Previous/next buttons
+      $('.owl-prev').click(function() {
+        $('.owl-carousel').trigger('prev.owl.carousel');
+      });
+      $('.owl-next').click(function() {
+        $('.owl-carousel').trigger('next.owl.carousel');
+      });
+    });
+});
+ </script>
+</body>
+</html>

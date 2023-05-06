@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Remove class1 Class Example</title>
+</head>
+<body>
+	<div data-foo="example"></div>
+	<div class="class1" data-foo="another-example"></div>
+
+	<script>
+		const myElement = document.querySelector('[data-foo="another-example"]');
+		myElement.classList.remove('class1');
+	</script>
+</body>
+</html>
