@@ -43,6 +43,8 @@ $.getJSON('json/readymovies.json', function(data){
   document.getElementById("genre").textContent = data[0].genres;
   document.getElementById("owlname").textContent = data[0].name;
   document.getElementById("owldesc").textContent = data[0].description;
+  $('.owl-carousel [data-idex="' + 0 + '"]  div').removeClass('overlay');
+
 
   $('.item').click(function() {
     var index = $(this).data('idex');

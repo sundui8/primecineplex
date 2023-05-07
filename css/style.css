@@ -196,7 +196,7 @@ li > a:hover:after {
   color: white;
 }
 .ticket{
-  background-image: url(img/clouds.png);
+  background-image: url(/img/clouds.png);
   display: grid;
   grid-template-columns: 80%;
   justify-content: space-evenly;

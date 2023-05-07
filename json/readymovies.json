@@ -33,5 +33,19 @@
         "name": "Fast X",
         "genres": "ACTION, ADVENTURE, CRIME",
         "description": "Dom Toretto and his family are targeted by the vengeful son of drug kingpin Hernan Reyes."
+      },      
+      {
+        "urlp": "/img/wakandap.jpg",
+        "url": "/img/wakanda.jpg",
+        "name": "Black Panther: Wakanda Forever",
+        "genres": "ACTION, ADVENTURE, DRAMA",
+        "description": "The people of Wakanda fight to protect their home from intervening world powers as they mourn the death of King T'Challa."
+      },      
+      {
+        "urlp": "/img/warcraftp.jpg",
+        "url": "/img/warcraft.jpg",
+        "name": "Warcraft",
+        "genres": "ACTION, ADVENTURE, FANTASY",
+        "description": "As an Orc horde invades the planet Azeroth using a magic portal, a few human heroes and dissenting Orcs must attempt to stop the true evil behind this war."
       }
     ]
