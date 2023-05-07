@@ -1,49 +1,49 @@
 [
       {
-        "urlp": "/img/dunep.jpg",
-        "url": "img/Dune.jpg",
+        "urlp": "/image/dunep.jpg",
+        "url": "image/Dune.jpg",
         "name": "Dune",
         "genres": "ACTION, ADVENTURE, DRAMA",
         "description": "A noble family becomes embroiled in a war for control over the galaxy's most valuable asset while its heir becomes troubled by visions of a dark future."
       }, 
       {
-        "urlp": "/img/jwp.jpg",
-        "url": "/img/jw.jpg",
+        "urlp": "/image/jwp.jpg",
+        "url": "/image/jw.jpg",
         "name": "John wick 4",
         "genres": "ACTION, CRIME, THRILLER",
         "description": "John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes."
       },      
       {
-        "urlp": "/img/avatarp.jpg",
-        "url": "/img/avatar.jpg",
+        "urlp": "/image/avatarp.jpg",
+        "url": "/image/avatar.jpg",
         "name": "Avatar: The Way of Water",
         "genres": "ACTION, ADVENTURE, DRAMA",
         "description": "Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home."
       },      
       {
-        "urlp": "/img/mariop.jpg",
-        "url": "/img/mario.jpg",
+        "urlp": "/image/mariop.jpg",
+        "url": "/image/mario.jpg",
         "name": "The Super Mario Bros. Movie",
         "genres": "ANIMATION, ADVENTURE, COMEDY",
         "description": "The story of The Super Mario Bros. on their journey through the Mushroom Kingdom."
       },      
       {
-        "urlp": "/img/fastp.jpg",
-        "url": "/img/fast.jpg",
+        "urlp": "/image/fastp.jpg",
+        "url": "/image/fast.jpg",
         "name": "Fast X",
         "genres": "ACTION, ADVENTURE, CRIME",
         "description": "Dom Toretto and his family are targeted by the vengeful son of drug kingpin Hernan Reyes."
       },      
       {
-        "urlp": "/img/wakandap.jpg",
-        "url": "/img/wakanda.jpg",
+        "urlp": "/image/wakandap.jpg",
+        "url": "/image/wakanda.jpg",
         "name": "Black Panther: Wakanda Forever",
         "genres": "ACTION, ADVENTURE, DRAMA",
         "description": "The people of Wakanda fight to protect their home from intervening world powers as they mourn the death of King T'Challa."
       },      
       {
-        "urlp": "/img/warcraftp.jpg",
-        "url": "/img/warcraft.jpg",
+        "urlp": "/image/warcraftp.jpg",
+        "url": "/image/warcraft.jpg",
         "name": "Warcraft",
         "genres": "ACTION, ADVENTURE, FANTASY",
         "description": "As an Orc horde invades the planet Azeroth using a magic portal, a few human heroes and dissenting Orcs must attempt to stop the true evil behind this war."
