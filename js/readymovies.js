@@ -1,4 +1,4 @@
-$.getJSON('/json/readymovies.json', function(data){
+$.getJSON('json/readymovies.json', function(data){
   
   var owlHTML = '';
 
