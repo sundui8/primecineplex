@@ -1,146 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Owl Carousel Example</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <title>Sticky Nav Bar</title>
   <style>
-    .owl-carousel .item img {
-      cursor: pointer;
-    }
-
-    #current-image {
-      max-width: 100%;
-      height: auto;
-    }
-
-    .owl-prev,
-    .owl-next {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 40px;
-      color: #FFF;
-      cursor: pointer;
-      z-index: 999;
-    }
-
-    .owl-prev {
+    nav {
+      position: fixed;
+      top: 0;
       left: 0;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
     }
 
-    .owl-next {
-      right: 0;
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
     }
 
-    .carousel-container {
-      position: relative;
+    nav li {
+      padding: 10px;
     }
 
-    #current-image-container {
-      position: relative;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 5px;
-      border-radius: 5px;
+    nav a {
+      color: #fff;
+      text-decoration: none;
     }
 
-    #current-image-container img {
-      max-height: 500px;
-      max-width: 100%;
-      cursor: pointer;
+    .spacer {
+      height: 1000px;
     }
-    .owl-carousel .item img.selected {
-    transform: scale(1.05);
-    box-shadow: 10px 10px 10px rgba(128, 28, 28, 0.5);
+    .content {
+      margin-top: 60px;
+      /* Adjust this value to match the height of your navigation bar */
     }
-    .owl-carousel .item img:hover {
-      transform: scale(1.05);
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    }
-    .owl-carousel .item img.selected:hover {
-      transform: scale(1.05);
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    }
-
   </style>
 </head>
 <body>
-    <div class="owl-carousel"></div>
-    <div class="owl-prev">&#10094;</div>
-    <div class="owl-next">&#10095;</div>
-    <div id="current-image-container">
-      <img id="current-image" src="" alt="">
-      <p class="description"></p>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="spacer">
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
+      <p>Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede.</p>
+      <p>Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.</p>
+      <p>Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis.</p>
+    </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
+  <p>Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede.</p>
+  <p>Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.</p>
+  <p>Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
+  <p>Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede.</p>
+  <p>Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.</p>
+  <p>Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
+  <p>Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede.</p>
+  <p>Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.</p>
+  <p>Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis.</p>
+.
+
   <script>
-  $(document).ready(function(){
-    $.getJSON('mydata.json', function(data){
-      var owlHTML = '';
+    const nav = document.querySelector('nav');
+    const spacer = document.querySelector('.spacer');
+    const navHeight = nav.offsetHeight;
 
-      for (var i = 0; i < data.length; i++) {
-        owlHTML += '<div class="item"><img  width="170px" height="280px"  src="' + data[i].portrait + '"></div>';
-      }
-      
-      $('.owl-carousel').html(owlHTML);
-
-      $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
-        animateOut: 'fadeOut',
-        animateIn: 'fadeIn',
-        responsive:{
-          0:{
-            items:1
-          },
-          600:{
-            items:6
-          } 
-        }
-      });
-
-      var firstImageSrc = data[0].image;
-      var firstImageDescription = data[0].description;
-
-      $('#current-image').attr('src', $('.owl-carousel .item').eq(0).find('img').attr('src'));
-      $('#current-image-container .description').html($('.owl-carousel .item').eq(0).find('p').html());
-
-      // Add event listener to images
-      $('.owl-carousel .item img').on('click', function(){
-        // Get index of clicked image
-        var index = $('.owl-carousel .item img').index(this);
-        
-        // Set clicked image as current image
-        var src = $(this).attr('src');
-        $('#current-image').attr('src', src);
-        
-        // Set clicked image as selected and remove "selected" class from all other images
-        $('.owl-carousel .item img').removeClass('selected');
-        $(this).addClass('selected');
-        
-        var description = $('.owl-carousel .item').eq(index).find('p').html();
-        $('#current-image-container .description').html(description);   
-      });
-
-      // Add event listener to img tag that displays images
-
-    
-
-      // Previous/next buttons
-      $('.owl-prev').click(function() {
-        $('.owl-carousel').trigger('prev.owl.carousel');
-      });
-      $('.owl-next').click(function() {
-        $('.owl-carousel').trigger('next.owl.carousel');
-      });
-    });
+    window.addEventListener('scroll', function() {
+  const nav = document.querySelector('nav');
+  if (window.scrollY > 0) {
+    nav.classList.add('nav-colored');
+  } else {
+    nav.classList.remove('nav-colored');
+  }
 });
- </script>
+
+  </script>
 </body>
 </html>

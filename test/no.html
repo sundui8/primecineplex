@@ -1,149 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Owl Carousel</title>
+  <title>CSS-Only Parallax Effect</title>
   <style>
-    .owl-carousel {
-      display: flex;
-      overflow-x: scroll;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
-      scroll-behavior: smooth;
-    }
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.block{
+  width: 100%;
+  height: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.img-parallax {
+  z-index: -0;
+  width: 100vmax;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  pointer-events: none
 
-    .owl-item {
-      flex: 0 0 auto;
-      width: 100%;
-      height: 400px;
-      scroll-snap-align: center;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  </style>
+}
+.lord-icon{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10vw;
+  font-weight: 400;
+}
+</style>
 </head>
 <body>
-  <div class="owl-carousel">
-    <div class="owl-item">
-      <img src="https://picsum.photos/id/1015/400/400">
-    </div>
-    <div class="owl-item">
-      <img src="https://picsum.photos/id/1016/400/400">
-    </div>
-    <div class="owl-item">
-      <img src="https://picsum.photos/id/1018/400/400">
-    </div>
-    <div class="owl-item">
-      <img src="https://picsum.photos/id/1020/400/400">
-    </div>
-    <div class="owl-item">
-      <img src="https://picsum.photos/id/1021/400/400">
-    </div>
-    <div class="owl-item">
-      <img src="https://picsum.photos/id/1023/400/400">
-    </div>
-  </div>
+  <lord-icon src="https://cdn.lordicon.com/dpohzien.json" trigger="hover" colors="primary:#ffffff" state="hover" style="width:100px;height:100px"></lord-icon>      <div class="block">
+        <img src="https://unsplash.it/1920/1920/?image=1005" data-speed="-1" class="img-parallax">
+        <div class="lord-icon" data-jc="https://cdn.lordicon.com/wloilxuq.json"></div>
 
-  <button class="prev">Prev</button>
-  <button class="next">Next</button>
+      </div>
+      <div class="block">
+        <img src="https://unsplash.it/1920/1920/?image=1067" data-speed="1" class="img-parallax">
+        <div class="lord-icon" data-jc="https://cdn.lordicon.com/wloilxuq.json"></div>
 
+      </div>
+      <div class="block">
+        <img src="https://unsplash.it/1920/1920/?gravity=center" data-speed="-0.25" class="img-parallax">
+        <div class="lord-icon" data-jc="https://cdn.lordicon.com/wloilxuq.json"></div>
+
+      </div>
+      <div class="block">
+        <img src="https://unsplash.it/1920/1920/?image=1080" data-speed="0.25" class="img-parallax">  
+        <div class="lord-icon" data-jc="https://cdn.lordicon.com/wloilxuq.json"></div>
+
+      </div>
+      <div class="block">
+        <img src="https://unsplash.it/1920/1920/?random" data-speed="-0.75" class="img-parallax">
+        <div class="lord-icon" data-jc="https://cdn.lordicon.com/wloilxuq.json"></div>
+
+      </div>
+      <div class="block">
+        <img src="https://unsplash.it/1920/1920/?random" data-speed="-0.75" class="img-parallax">
+        <div class="lord-icon" data-jc="https://cdn.lordicon.com/wloilxuq.json"></div>
+
+      </div>
+      <div class="block">
+        <img src="https://unsplash.it/1920/1920/?random" data-speed="-0.75" class="img-parallax">
+        <div class="lord-icon" data-jc="https://cdn.lordicon.com/wloilxuq.json"></div>
+
+      </div>
+      <div class="block">
+        <img src="https://unsplash.it/1920/1920/?random" data-speed="-0.75" class="img-parallax">
+        <div class="lord-icon" data-jc="https://cdn.lordicon.com/wloilxuq.json"></div>
+      </div>
+    <div class="text">bnuuuu</div>
+    <lord-icon src="https://cdn.lordicon.com/dpohzien.json" trigger="hover" colors="primary:#ffffff" state="hover" style="width:100px;height:100px"></lord-icon>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script>
-const carousel = document.querySelector(".owl-carousel");
-const items = carousel.querySelectorAll(".owl-item");
-const itemCount = items.length;
-const visibleItems = 3;
-let currentItem = 1;
 
-let touchStartX = 0;
-let touchEndX = 0;
-let isDragging = false;
-let dragDistance = 0;
+$('.img-parallax').each(function(){
+  var img = $(this);
+  var imgParent = $(this).parent();
+  function parallaxImg () {
+    var speed = -1;
+    var imgY = imgParent.offset().top;
+    var winY = $(this).scrollTop();
+    var winH = $(this).height();
+    var parentH = imgParent.innerHeight();
 
-function setItemPositions() {
-  items.forEach((item, index) => {
-    const position = index - currentItem + Math.floor(visibleItems / 2);
-    item.style.transform = `translateX(${position * 100}%)`;
-  });
-}
 
-function move(direction) {
-  if (direction === "prev" && currentItem > 1) {
-    currentItem--;
-  } else if (direction === "next" && currentItem < itemCount - visibleItems + 1) {
-    currentItem++;
-  }
-  setItemPositions();
-}
+    // The next pixel to show on screen      
+    var winBottom = winY + winH;
 
-setItemPositions();
-
-document.querySelector(".prev").addEventListener("click", () => move("prev"));
-document.querySelector(".next").addEventListener("click", () => move("next"));
-
-carousel.addEventListener("touchstart", (event) => {
-  touchStartX = event.changedTouches[0].screenX;
-});
-
-carousel.addEventListener("touchmove", (event) => {
-  if (!isDragging) {
-    isDragging = true;
-    touchEndX = touchStartX;
-  }
-  dragDistance = event.changedTouches[0].screenX - touchEndX;
-  const position = currentItem - 1 + dragDistance / carousel.offsetWidth * visibleItems;
-  items.forEach((item, index) => {
-    const itemPosition = index - position + Math.floor(visibleItems / 2);
-    item.style.transform = `translateX(${itemPosition * 100}%)`;
-  });
-});
-
-carousel.addEventListener("touchend", () => {
-  if (isDragging) {
-    currentItem -= Math.round(dragDistance / carousel.offsetWidth * visibleItems);
-    setItemPositions();
-    isDragging = false;
-    dragDistance = 0;
-  } else {
-    touchEndX = event.changedTouches[0].screenX;
-    const touchDistance = touchEndX - touchStartX;
-    if (touchDistance < -50) {
-      move("next");
-    } else if (touchDistance > 50) {
-      move("prev");
+    // If block is shown on screen
+    if (winBottom > imgY && winY < imgY + parentH) {
+      // Number of pixels shown after block appear
+      var imgBottom = ((winBottom - imgY) * speed);
+      // Max number of pixels until block disappear
+      var imgTop = winH + parentH;
+      // Porcentage between start showing until disappearing
+      var imgPercent = ((imgBottom / imgTop) * 100) + (50 - (speed * 50));
     }
+    img.css({
+      top: imgPercent + '%',
+      transform: 'translate(-50%, -' + imgPercent + '%)'
+    });
   }
-});
-
-carousel.addEventListener("mousedown", (event) => {
-  touchStartX = event.screenX;
-  isDragging = true;
-  touchEndX = touchStartX;
-  carousel.addEventListener("mousemove", handleMouseMove);
-  document.addEventListener("mouseup", handleMouseUp);
-});
-
-function handleMouseMove(event) {
-  dragDistance = event.screenX - touchEndX;
-  const position = currentItem - 1 + dragDistance / carousel.offsetWidth * visibleItems;
-  items.forEach((item, index) => {
-    const itemPosition = index - position + Math.floor(visibleItems / 2);
-    item.style.transform = `translateX(${itemPosition * 100}%)`;
+  $(document).on({
+    scroll: function () {
+      parallaxImg();
+    }, ready: function () {
+      parallaxImg();
+    }
   });
-}
-
-function handleMouseUp() {
-  currentItem -= Math.round(dragDistance / carousel.offsetWidth * visibleItems);
-  setItemPositions();
-  isDragging = false;
-  dragDistance = 0;
-  carousel.removeEventListener("mousemove", handleMouseMove);
-  document.removeEventListener("mouseup", handleMouseUp);
-}
-
+});
   </script>
 </body>
 </html>

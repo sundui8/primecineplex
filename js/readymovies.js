@@ -1,9 +1,9 @@
-$.getJSON('json/readymovies.json', function(data){
+$.getJSON('json/readymovies.json', function(dat){
   
   var owlHTML = '';
 
-  for (var i = 0; i < data.length; i++) {
-    owlHTML += '<div class="item" data-idex="' + i + '"><img  class="imgitem" src="' + data[i].urlp + '"><div class="overlay unselected"></div></div>';
+  for (var i = 0; i < dat.length; i++) {
+    owlHTML += '<div class="item" data-idex="' + i + '"><img  class="imgitem" src="' + dat[i].urlp + '"><div class="overlay unselected"></div></div>';
   }
 
   $('.owl-carousel').html(owlHTML);
@@ -39,22 +39,20 @@ $.getJSON('json/readymovies.json', function(data){
     $('.owl-carousel').trigger('next.owl.carousel');
   });
 
-  document.getElementById("current-image").src = data[0].url;
-  document.getElementById("genre").textContent = data[0].genres;
-  document.getElementById("owlname").textContent = data[0].name;
-  document.getElementById("owldesc").textContent = data[0].description;
+  document.getElementById("current-image").src = dat[0].url;
+  document.getElementById("genre").textContent = dat[0].genres;
+  document.getElementById("owlname").textContent = dat[0].name;
+  document.getElementById("owldesc").textContent = dat[0].description;
   $('.owl-carousel [data-idex="' + 0 + '"]  div').removeClass('overlay');
 
 
   $('.item').click(function() {
     var index = $(this).data('idex');
-
-
     console.log('Clicked item index:', index);
-    document.getElementById("current-image").src = data[index].url;
-    document.getElementById("genre").textContent = data[index].genres;
-    document.getElementById("owlname").textContent = data[index].name;
-    document.getElementById("owldesc").textContent = data[index].description;
+    document.getElementById("current-image").src = dat[index].url;
+    document.getElementById("genre").textContent = dat[index].genres;
+    document.getElementById("owlname").textContent = dat[index].name;
+    document.getElementById("owldesc").textContent = dat[index].description;
 
     $('.owl-carousel .unselected ').addClass('overlay');
 
