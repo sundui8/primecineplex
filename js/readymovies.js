@@ -39,11 +39,11 @@ $.getJSON('json/readymovies.json', function(dat){
     $('.owl-carousel').trigger('next.owl.carousel');
   });
 
-  document.getElementById("current-image").src = dat[0].url;
-  document.getElementById("genre").textContent = dat[0].genres;
-  document.getElementById("owlname").textContent = dat[0].name;
-  document.getElementById("owldesc").textContent = dat[0].description;
-  $('.owl-carousel [data-idex="' + 0 + '"]  div').removeClass('overlay');
+  document.getElementById("current-image").src = dat[2].url;
+  document.getElementById("genre").textContent = dat[2].genres;
+  document.getElementById("owlname").textContent = dat[2].name;
+  document.getElementById("owldesc").textContent = dat[2].description;
+  $('.owl-carousel [data-idex="' + 2 + '"]  div').removeClass('overlay');
 
 
   $('.item').click(function() {
