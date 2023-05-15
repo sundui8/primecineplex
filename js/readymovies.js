@@ -14,7 +14,10 @@ $.getJSON('json/readymovies.json', function(dat){
     nav:false,
     responsive:{
       0:{
-        items:2,
+        items:2
+      },
+      600:{
+        items:3,
       },
       920:{
         items:4

@@ -141,6 +141,9 @@ h1{
   display: inline-block;
   letter-spacing: 1px;
 }
+.fixed-nav {
+  grid-template-columns: 90%;
+}
 .navbar{
   display: flex;
   justify-content: space-between;
@@ -205,8 +208,8 @@ li > a:hover:after {
   color: white;
 }
 .ticket{
-   display: grid;
-  grid-template-columns: 80%;
+  display: grid;
+  grid-template-columns: 90%;
   justify-content: space-evenly;
 }
 .yellowh1{
@@ -244,9 +247,9 @@ li > a:hover:after {
   grid-template-columns: 2% 95% 3%;
   background-color: #000000;
 }
-@media (max-width:1209px) {
+@media only screen and (max-width:1209px) {
   h1{
-    font-size: 30px;
+    font-size: 20px;
   }
   ul{
     border-bottom: none;
@@ -304,6 +307,7 @@ li > a:hover:after {
     flex-direction: column;
   }
   .current-container{
+    margin-top: 5%;
     max-height: 200px;
   }
   .details{
