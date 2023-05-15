@@ -360,15 +360,11 @@ li > a:hover:after {
 .selected{
   display: none;
 }
-
-.parallax-container{
-
-}
 .parallax{
   padding: 5% 10% 5% 10%;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-attachment: fixed;
   height: 20rem;
   display: flex;
@@ -382,9 +378,6 @@ li > a:hover:after {
 }
 .parallax *{
   width: 100%;
-}
-.parallax{
-  
 }
 lord-icon{
   cursor: pointer;
