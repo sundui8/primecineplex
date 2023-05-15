@@ -1,4 +1,4 @@
-fetch('/json/readymovies.json')
+fetch('json/readymovies.json')
   .then(response => response.json())
   .then(data => {
     const moviesList = document.getElementById('parallax-container');
