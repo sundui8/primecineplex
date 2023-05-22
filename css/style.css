@@ -322,12 +322,10 @@ li > a:hover:after {
 
 .item{
   position: relative;
-
   cursor: pointer;
   width: 175px;
   height: 250px;
   margin: 10px;
-  
 }
 .imgitem{
   object-fit: cover;

@@ -65,7 +65,7 @@ function MoviesFromJson(jsonUrl) {
         .then(data => {
         movie = data.intrested;
         setSlide(0);
-        // setInterval(() => nextSlide(), 5000);
+        setInterval(() => nextSlide(), 5000);
         })
 }
 

@@ -33,7 +33,6 @@ $.getJSON('json/readymovies.json', function(dat){
       }
     }
   });
-  
   $('#ticketlink').click(function() {
     localStorage.setItem("myData", index);
   });
@@ -45,7 +44,6 @@ $.getJSON('json/readymovies.json', function(dat){
   $('.owl-next').click(function() {
     $('.owl-carousel').trigger('next.owl.carousel');
   });
-
   document.getElementById("current-image").src = dat[2].url;
   document.getElementById("genre").textContent = dat[2].genres;
   document.getElementById("owlname").textContent = dat[2].name;
