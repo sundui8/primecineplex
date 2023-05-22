@@ -1,5 +1,5 @@
 $.getJSON('json/readymovies.json', function(dat){
-  
+  index = $(this).data('idex');
   var owlHTML = '';
 
   for (var i = 0; i < dat.length; i++) {
@@ -33,6 +33,10 @@ $.getJSON('json/readymovies.json', function(dat){
       }
     }
   });
+  
+  $('#ticketlink').click(function() {
+    localStorage.setItem("myData", index);
+  });
 
   $('.owl-prev').click(function() {
     $('.owl-carousel').trigger('prev.owl.carousel');
@@ -50,7 +54,7 @@ $.getJSON('json/readymovies.json', function(dat){
 
 
   $('.item').click(function() {
-    var index = $(this).data('idex');
+    index = $(this).data('idex');
     console.log('Clicked item index:', index);
     document.getElementById("current-image").src = dat[index].url;
     document.getElementById("genre").textContent = dat[index].genres;
@@ -58,13 +62,8 @@ $.getJSON('json/readymovies.json', function(dat){
     document.getElementById("owldesc").textContent = dat[index].description;
 
     $('.owl-carousel .unselected ').addClass('overlay');
-
     $('.owl-carousel [data-idex="' + index + '"]  div').removeClass('overlay');
-
-
-
-
-    
+    currentSlideIndex = index;
   });
 
 });

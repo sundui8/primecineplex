@@ -1,0 +1,7 @@
+.left-arrow, .right-arrow{
+    display: none;
+}
+header{
+    grid-template-columns: 80%;
+    justify-content: center
+  }

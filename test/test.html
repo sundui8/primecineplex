@@ -4,44 +4,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>asdasd</title>
 </head>
 <body>
   <nav>
-    <ul>
-      <li><a href="#" class="nav-link" data-target=".section1">Section 1</a></li>
-      <li><a href="#" class="nav-link" data-target=".section2">Section 2</a></li>
-      <li><a href="#" class="nav-link" data-target=".section3">Section 3</a></li>
-    </ul>
-  </nav>
-  
-  <section class="section1">
-    <h2>Section 1</h2>
-    <p>This is the first section of the page.</p>
-  </section>
-  
-  <section class="section2">
-    <h2>Section 2</h2>
-    <p>This is the second section of the page.</p>
-  </section>
-  
-  <section class="section3">
-    <h2>Section 3</h2>
-    <p>This is the third section of the page.</p>
-  </section>
-  
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-  $(document).ready(function() {
-    $('.nav-link').click(function(e) {
-      e.preventDefault(); // prevent default behavior of the link
-      var target = $(this).data('target'); // get the target section from the data-target attribute
-      $('html, body').animate({
-        scrollTop: $(target).offset().top // scroll to the top of the target section
-      }, 1000); // set the animation duration to 1000ms (1 second)
-    });
-  });
-  </script>
-  
+    <div>
+        <a href="/">
+            <div id="logo"><img src="image.png" alt="Home"/></div>
+            <div id="headtag"><img src="image.png" alt="Home"/></div>
+            <div id="tagline"><img src="image.png" alt="Home"/></div>
+        </a>
+    </div>
+    <div> 
+        <a href="/" class="here">Home</a>
+        <a href="/about.html" >About</a>      
+        <a href="/services.html" >Services</a>          
+        <a href="/pricing.html" >Pricing</a>    
+        <a href="/contact.html" >Contact Us</a>
+        <input id="srchbar" type="search" placeholder="Search">
+    </div>
+</nav>
+<div class="sda">sda</div>
 </body>
 </html>
