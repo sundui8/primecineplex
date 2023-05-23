@@ -10,7 +10,7 @@
 }
 header{
     position: relative;
-    min-height: 500px
+    min-height: 300px
 }
 header >img {
     object-fit: cover;
