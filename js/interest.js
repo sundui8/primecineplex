@@ -1,14 +1,7 @@
 let currentSlideIndex = 0;
-// let movie = [];
 
 function setSlide(index) {
     currentSlideIndex = index;
-
-    // if (currentSlideIndex >= movie.length) {
-    //     currentSlideIndex = 0;
-    // } else if (currentSlideIndex < 0) {
-    //     currentSlideIndex = movie.length - 1;
-    // }
 
     document.getElementById("header").style.backgroundImage = `url(${movie[currentSlideIndex].url})`;
     document.getElementById("movie-name").textContent = movie[currentSlideIndex].name

@@ -2,30 +2,29 @@ var receivedData = localStorage.getItem("myData");
 let currentSlideIndex = receivedData;  
 
 function setSlide(index) {
-    currentSlideIndex = index;
+  currentSlideIndex = index;
+  var genres = movie[currentSlideIndex].genres
+  var container =  document.getElementById("genre")
 
-    var genres = movie[currentSlideIndex].genres
-    var container =  document.getElementById("genre")
-
-    for (var i = 0; i < genres.length; i++) {
-      var genre = genres[i];
-      var pElement = document.createElement("p");
-      pElement.textContent = genre;
-      container.appendChild(pElement);
+  for (var i = 0; i < genres.length; i++) {
+    var genre = genres[i];
+    var pElement = document.createElement("p");
+    pElement.textContent = genre;
+    container.appendChild(pElement);
   }
-    document.getElementById("header").style.backgroundImage = `url(${movie[currentSlideIndex].url})`;
-    document.getElementById("movie-name").textContent = movie[currentSlideIndex].name
-    document.getElementById("description").textContent = movie[currentSlideIndex].description
-    document.getElementById("rating").textContent = movie[currentSlideIndex].rating
-    document.getElementById("link").href = movie[currentSlideIndex].link;
-    document.getElementById("desc").textContent = movie[currentSlideIndex].description
-    document.getElementById("poster").src =  movie[currentSlideIndex].urlp
-    document.getElementById("duration").textContent = movie[currentSlideIndex].duration
-    document.getElementById("age").textContent = movie[currentSlideIndex].rating
-    document.getElementById("director").textContent = movie[currentSlideIndex].director
-    document.getElementById("imdb").textContent = movie[currentSlideIndex].imdb
-    document.getElementById("title").textContent = movie[currentSlideIndex].name
-    document.getElementById("icon").setAttribute('href', movie[currentSlideIndex].urlp);
+  document.getElementById("header").style.backgroundImage = `url(${movie[currentSlideIndex].url})`;
+  document.getElementById("movie-name").textContent = movie[currentSlideIndex].name
+  document.getElementById("description").textContent = movie[currentSlideIndex].description
+  document.getElementById("rating").textContent = movie[currentSlideIndex].rating
+  document.getElementById("link").href = movie[currentSlideIndex].link;
+  document.getElementById("desc").textContent = movie[currentSlideIndex].description
+  document.getElementById("poster").src =  movie[currentSlideIndex].urlp
+  document.getElementById("duration").textContent = movie[currentSlideIndex].duration
+  document.getElementById("age").textContent = movie[currentSlideIndex].rating
+  document.getElementById("director").textContent = movie[currentSlideIndex].director
+  document.getElementById("imdb").textContent = movie[currentSlideIndex].imdb
+  document.getElementById("title").textContent = movie[currentSlideIndex].name
+  document.getElementById("icon").setAttribute('href', movie[currentSlideIndex].urlp);
     
   }
 
@@ -43,7 +42,7 @@ window.onload = function() {
 
 var today = new Date();
 var sate = today.getDate();
-var month = today.getMonth() + 1; // January is 0
+var month = today.getMonth() + 1; 
 var year = today.getFullYear();
 
 var weekdays = ['Бүтэнсайн', 'Даваа', 'Мягмар', 'Лхагва', 'Пүрэв', 'Баасан', 'Бямба'];
