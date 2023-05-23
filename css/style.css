@@ -397,7 +397,8 @@ lord-icon{
 }
 .contact-container{
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: center
 }
 .contact{
   display: grid;
@@ -405,7 +406,7 @@ lord-icon{
   align-items: center;
 }
 .contact > p{
-  font-size: 18px;
+  font-size: 15px;
   height: 5rem;
   text-align: center;
 }

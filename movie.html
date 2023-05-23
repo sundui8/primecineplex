@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title id="title">Document</title>
+    <link
+    id="icon" 
+    rel="Website Icon" 
+    type="png"
+    href=""
+    >
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/movie.css">
 </head>
 <body>
     <div id="nav-placeholder"></div>
     <div class="movie-container">
-        <div class="poster responsive">
+        <div class="poster">
             <img id="poster" src="" alt="">
         </div>
         <div class="infromation">
@@ -38,12 +44,75 @@
             </div>
         </div>
     </div>
-    <div>
-        
+    <div class="time-table">
+        <div class="branch">
+            <div class="branch-name">
+              <h2>
+                PRIME CINEPLEX ZAISAN
+              </h2>
+            </div>
+            <div class="days">
+              <div><p id="day1"></p><p id="date1"></p></div>
+              <div><p id="day2"></p><p id="date2"></p></div>
+              <div><p id="day3"></p><p id="date3"></p></div>
+              <div><p id="day4"></p><p id="date4"></p></div>
+              <div><p id="day5"></p><p id="date5"></p></div>
+            </div>
+            <div class="hall">
+              <p>Premium 2d <span>/Танхим 6/</span></p>
+            </div>
+            <div class="schedule">
+              <p>11:30</p>
+              <p>13:00</p>
+              <p>15:20</p>
+              <p>19:40</p>
+            </div>
+            <div class="hall">
+              <p>Premium 2d <span>/Танхим 6/</span></p>
+            </div>
+            <div class="schedule">
+              <p>11:30</p>
+              <p>13:00</p>
+              <p>19:40</p>
+            </div>
+          </div>
+          <div>
+            <div class="branch-name">
+              <h2>
+                PRIME CINEPLEX ENCANTO
+              </h2>
+            </div>
+            <div class="days">
+              <div><p id="day6"></p><p id="date6"></p></div>
+              <div><p id="day7"></p><p id="date7"></p></div>
+              <div><p id="day8"></p><p id="date8"></p></div>
+              <div><p id="day9"></p><p id="date9"></p></div>
+              <div><p id="day10"></p><p id="date10"></p></div>
+            </div>
+            <div class="hall">
+              <p>Premium 2d <span>/Танхим 6/</span></p>
+            </div>
+            <div class="schedule">
+              <p>13:00</p>
+              <p>15:20</p>
+              <p>19:40</p>
+            </div>
+            <div class="hall">
+              <p>Premium 2d <span>/Танхим 6/</span></p>
+            </div>
+            <div class="schedule">
+              <p>11:30</p>
+              <p>13:00</p>
+              <p>15:20</p>
+              <p>19:40</p>
+            </div>
+          </div>
+          
     </div>
-    <div id="footer-placeholder"></div>
+    <div  id="footer-placeholder"></div>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/static.js"></script>
+    <script src="js/movie.js"></script>
 </body>
 </html>

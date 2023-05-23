@@ -1,36 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Display Genres</title>
-</head>
 <body>
-    <div id="genres"></div>
 
-    <script>
-        // Assuming you have the JSON data stored in a variable called "jsonData"
-        var jsonData = {
-            "genres": ["ACTION", "CRIME", "THRILLER"]
-        };
+<h1>My First Google Map</h1>
 
-        // Access the "genres" array from the JSON data
-        var genres = jsonData.genres;
+<div id="googleMap" style="width:100%;height:400px;"></div>
+<div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1309&amp;height=400&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://capcuttemplate.org/">Capcut Templates</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+<script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(51.508742,-0.120850),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
 
-        // Create a div element to hold the genres
-        var genresDiv = document.getElementById("genres");
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 
-        // Iterate through each genre and create a <p> element for it
-        for (var i = 0; i < genres.length; i++) {
-            var genre = genres[i];
-
-            // Create a <p> element
-            var pElement = document.createElement("p");
-
-            // Set the text content of the <p> element to the genre
-            pElement.textContent = genre;
-
-            // Append the <p> element to the genresDiv
-            genresDiv.appendChild(pElement);
-        }
-    </script>a
 </body>
 </html>

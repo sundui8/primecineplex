@@ -1,0 +1,34 @@
+#nav-holder{
+    padding-top: 1%;
+    z-index: 999;
+    display: grid;
+    grid-template-columns: 80%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    justify-content: space-around;
+}
+header{
+    position: relative;
+    min-height: 500px
+}
+header >img {
+    object-fit: cover;
+    position: absolute;
+    min-width: 100%;
+    height: 100%;
+    vertical-align: middle; 
+    
+}
+.branch{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+}
+.branch > img {
+    width: 511px;
+}
+.mapping1 {
+    width: 90%;
+}  
