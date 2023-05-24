@@ -29,7 +29,7 @@ header{
 }
 .poster {
     width: 100%;
-    max-width: 400px; /* Adjust the max-width to fit your design */
+    max-width: 400px; 
   }
   
   .poster img {
@@ -146,5 +146,6 @@ header{
         display: none;
     }
 }
+
 
 

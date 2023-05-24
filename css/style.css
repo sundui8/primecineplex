@@ -1,27 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
 
 @font-face {
   font-family: raleway;
-  src: url(/raleway/static/Raleway-Medium.ttf );
+  src: url(/raleway/static/Raleway-Medium.ttf);
 }
 ::-webkit-scrollbar {
   width: 1px;
   cursor: pointer;
 }
 ::-webkit-scrollbar-track {
-  background: #000000; 
+  background: #000000;
 }
 ::-webkit-scrollbar-thumb {
-  background: #ffffff; 
+  background: #ffffff;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #ec7532; 
+  background: #ec7532;
 }
-.responsive{
+.responsive {
   max-width: 100%;
   height: auto;
 }
-p{
+p {
   font-size: 18px;
   display: block;
   margin-block-start: 1em;
@@ -29,19 +29,19 @@ p{
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-html, body{
+html,
+body {
   height: 100%;
   width: 100%;
   background-color: rgb(10, 10, 10);
-  font-family: 'Ubuntu', sans-serif;
-  margin: 0;  
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
   color: white;
   padding: 0;
   scroll-behavior: smooth;
-
 }
 
-a{
+a {
   white-space: nowrap;
   display: flex;
   color: #fff;
@@ -51,13 +51,13 @@ a{
   position: relative;
   display: inline-block;
 }
-header{
+header {
   min-height: 600px;
   display: grid;
   grid-template-columns: 10% 80% 10%;
   transition: background-image 0.5s ease-in-out;
 }
-h1{
+h1 {
   margin: 0.67em 0;
   display: block;
   font-size: 1.5em;
@@ -66,54 +66,56 @@ h1{
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
-  color: white; 
+  color: white;
 }
-.movie-name{
+.movie-name {
   font-weight: bold;
 }
-.info{
+.info {
   height: 200px;
 }
-.nicebackround{
+.nicebackround {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.center{
+.center {
   display: grid;
   align-items: center;
-  justify-items: center;  
+  justify-items: center;
 }
 
-.main{
+.main {
   margin-top: 200px;
   display: grid;
   align-content: space-around;
 }
-.button{
+.button {
   padding: 15px;
-  text-decoration: none; 
-  background-color: #ec7532; 
-  color: white; 
-  font-size: 13px; 
-  border: 0px solid rgb(255, 255, 255); 
-  border-radius: 30px; 
+  text-decoration: none;
+  background-color: #ec7532;
+  color: white;
+  font-size: 13px;
+  border: 0px solid rgb(255, 255, 255);
+  border-radius: 30px;
 }
-.button img{
+.button img {
   vertical-align: middle;
 }
-.rating{
+.rating {
   font-weight: bold;
   text-align: center;
   display: inline-block;
   width: 50px;
-  color: white; font-size: 13px;  
-  border: 2px solid rgb(255, 255, 255); 
-  border-radius: 100%; 
+  color: white;
+  font-size: 13px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 100%;
   padding-top: 12px;
   padding-bottom: 12px;
   font-size: 15px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .navcontainer {
   padding-top: 1%;
@@ -131,35 +133,35 @@ h1{
   position: fixed;
   border-radius: 5px;
 }
-.fixed-nav  ul{
+.fixed-nav ul {
   border-bottom: 0;
 }
-.fixed-nav a{
-  font-size: 12px;  
+.fixed-nav a {
+  font-size: 12px;
   font-weight: normal;
-  line-height: .8em;
+  line-height: 0.8em;
   display: inline-block;
   letter-spacing: 1px;
 }
 .fixed-nav {
   grid-template-columns: 90%;
 }
-.navbar{
+.navbar {
   display: flex;
   justify-content: space-between;
 }
-li{
+li {
   padding-left: 12px;
   padding-right: 12px;
   display: inline;
 }
-ul{
+ul {
   display: flex;
   padding-left: 0;
   list-style: none;
   border-bottom: 1px solid rgb(176, 176, 176);
 }
-ul > li > a:after{
+ul > li > a:after {
   content: "";
   display: block;
   height: 2px;
@@ -168,20 +170,20 @@ ul > li > a:after{
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-li > a:hover:after { 
-  width: 100%; 
-  left: 0; 
+li > a:hover:after {
+  width: 100%;
+  left: 0;
 }
-#nav-check{
+#nav-check {
   display: none;
 }
-.right-arrow{
+.right-arrow {
   cursor: pointer;
   display: grid;
   align-content: center;
   justify-content: center;
 }
-.left-arrow{
+.left-arrow {
   cursor: pointer;
   display: grid;
   align-content: center;
@@ -207,53 +209,53 @@ li > a:hover:after {
   background-color: #ffffff;
   color: white;
 }
-.ticket{
+.ticket {
   display: grid;
   grid-template-columns: 90%;
   justify-content: space-evenly;
 }
-.yellowh1{
+.yellowh1 {
   display: inline;
   border-bottom: 10px solid #ec7532;
 }
-.yellowp{
+.yellowp {
   color: #ec7532;
 }
-.details{
+.details {
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
   margin-right: 2em;
 }
-.active{
+.active {
   display: grid;
   grid-template-columns: 40% 60%;
 }
 
-.mapping{
+.mapping {
   width: 80%;
   margin-top: 2em;
   margin-bottom: 2em;
 }
-.mapping1{
+.mapping1 {
   margin: auto;
   width: 80%;
   margin-top: 2em;
   margin-bottom: 2em;
 }
-.owl{
+.owl {
   display: grid;
   grid-template-columns: 2% 95% 3%;
   background-color: #000000;
 }
-@media only screen and (max-width:1209px) {
-  h1{
+@media only screen and (max-width: 1209px) {
+  h1 {
     font-size: 20px;
   }
-  ul{
+  ul {
     border-bottom: none;
-  } 
+  }
   .nav-btn {
     display: inline-block;
     position: absolute;
@@ -272,7 +274,7 @@ li > a:hover:after {
     height: 10px;
     border-top: 2px solid #eee;
   }
-  ul{
+  ul {
     position: absolute;
     display: block;
     width: 100%;
@@ -284,7 +286,7 @@ li > a:hover:after {
     left: 0px;
     text-align: center;
   }
-  nav > ul > li{
+  nav > ul > li {
     display: block;
     width: 100%;
     padding-top: 15px;
@@ -292,46 +294,43 @@ li > a:hover:after {
   #nav-check:not(:checked) ~ ul {
     height: 0px;
   }
-  #nav-check:checked ~ ul{
+  #nav-check:checked ~ ul {
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
 }
-@media (max-width:950px)
-{
-  .item{
+@media (max-width: 950px) {
+  .item {
     padding-left: 10px;
   }
-  .active{
+  .active {
     display: flex;
     flex-direction: column;
   }
-  .current-container{
+  .current-container {
     margin-top: 5%;
     max-height: 200px;
   }
-  .details{
-    align-items: center;  
+  .details {
+    align-items: center;
     margin-right: 0;
   }
-  .description{
+  .description {
     text-align: center;
   }
 }
 
-
-.item{
+.item {
   position: relative;
   cursor: pointer;
   width: 175px;
   height: 250px;
   margin: 10px;
 }
-.imgitem{
+.imgitem {
   object-fit: cover;
   width: 100%;
   height: 100%;
-
 }
 .overlay {
   position: absolute;
@@ -346,23 +345,23 @@ li > a:hover:after {
   transform: scale(1.05);
   box-shadow: 0px 0px 10px rgb(255, 255, 255);
 }
-#owldesc{
-  font-family: 'Roboto Condensed', sans-serif;
+#owldesc {
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
 }
-.current-container{
+.current-container {
   max-width: 800px;
   height: 400px;
 }
-#current-image{
+#current-image {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-.selected{
+.selected {
   display: none;
 }
-.parallax{
+.parallax {
   padding: 5% 10% 5% 10%;
   background-position: center;
   background-size: cover;
@@ -374,46 +373,46 @@ li > a:hover:after {
   align-items: center;
   justify-content: space-between;
 }
-.parallax  h1,
-.parallax  p {
+.parallax h1,
+.parallax p {
   margin: 0;
 }
-.parallax *{
+.parallax * {
   width: 100%;
 }
-lord-icon{
+lord-icon {
   cursor: pointer;
   display: block;
   text-align: center;
   margin: 0;
 }
-.footer-container{
+.footer-container {
   background-color: rgb(20, 20, 20);
   display: grid;
   place-items: center;
 }
-.footer-container > .logo{
+.footer-container > .logo {
   margin-top: 2%;
 }
-.contact-container{
+.contact-container {
   display: grid;
   grid-template-columns: 30% 30% 30%;
-  justify-content: center
+  justify-content: center;
 }
-.contact{
+.contact {
   display: grid;
   justify-items: center;
   align-items: center;
 }
-.contact > p{
+.contact > p {
   font-size: 15px;
   height: 5rem;
   text-align: center;
 }
-.contact > img{
+.contact > img {
   height: 70%;
 }
-.copyright{
+.copyright {
   text-align: center;
   opacity: 0.5;
 }

@@ -1,134 +1,143 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="Website Icon" 
-  type="png"
-  href="image/p.png">
-    <link rel="stylesheet" href="css/style.css">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <head>
+    <link rel="Website Icon" type="png" href="image/p.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
     <title>Prime Cineplex</title>
-</head>
-<body>
-  <header id="header" class="nicebackround">
-    <div id="prev-btn"  class="left-arrow" >
-        <img  src="image/left-arrow.png" alt="">
-    </div>
-    <div id="navcontainer" class="navcontainer">
-      <nav class="navbar">
-        <div class="logo" >
-          <img class="responsive" src="image/logo.png" href="index.html">
-        </div>
-        <input type="checkbox" id="nav-check">
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
-        <ul>
-          <li><a href="index.html#order">ЗАХИАЛГА</a></li>
-          <li><a href="index.html#parallax-container">ТУН УДАХГҮЙ</a></li>
-          <li><a href="">ГИШҮҮНЧЛЭЛЭЛ</a></li>
-          <li><a href="">ҮНЭ УРАМШУУЛАЛ</a></li>
-          <li><a href="loaction.html">САЛБАРУУД</a></li>
-          <li><a href="login.html"><img src="image/user.png" alt=""></a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="main">
-      <div class="info">
-        <h1 id="movie-name" class="movie-name"></h1>
-        <p id="description" class="description"></p>
-        <br>
-        <div>
-          <span id="rating" class="rating"></span>
-          <a id="link" class="button youtube" href="">
-            <img src="image/play.png">
-            <span>WATCH TRAILER</span>
-          </a>
-        </div>
+  </head>
+  <body>
+    <header id="header" class="nicebackround">
+      <div id="prev-btn" class="left-arrow">
+        <img src="image/left-arrow.png" alt="" />
       </div>
-      <div id="indicator-container" class="indicator-container"></div>
-    </div>
-    <div id="next-btn" class="right-arrow">
-        <img src="image/right-arrow.png" alt="">
-    </div>
-  </header>
-  <div id="order" class="ticket nicebackround">
-    <div>
-      <div class="mapping">
-        <h1 class="yellowh1">Манай дэлгэцнээ</h1>
-      </div>
-      <div class="active">
-        <div class="details">
-          <p id="genre" class="yellowp "></p>
-            <h1 id="owlname" class="movie-name"></h1>
-            <img src="image/5star.png">
-          <p id="owldesc" class="description"></p>
-          <a id="ticketlink" class="button" href="movie.html">
-            <span>Тасалбар захиалах</span>
-          </a>
-        </div>
-          <div class="current-container responsive">
-            <img id="current-image"  src="">
+      <div id="navcontainer" class="navcontainer">
+        <nav class="navbar">
+          <div class="logo">
+            <img class="responsive" src="image/logo.png" href="index.html" />
           </div>
+          <input type="checkbox" id="nav-check" />
+          <div class="nav-btn">
+            <label for="nav-check">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          </div>
+          <ul>
+            <li><a href="index.html#order">ЗАХИАЛГА</a></li>
+            <li><a href="index.html#parallax-container">ТУН УДАХГҮЙ</a></li>
+            <li><a href="">ГИШҮҮНЧЛЭЛЭЛ</a></li>
+            <li><a href="">ҮНЭ УРАМШУУЛАЛ</a></li>
+            <li><a href="loaction.html">САЛБАРУУД</a></li>
+            <li>
+              <a href="login.html"><img src="image/user.png" alt="" /></a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </div>
-  
-    <div class="owl">
-      <div class="left-arrow owl-prev">
-        <img src="image/left.png" alt="">
-      </div>
-  
-      <div class="owl-carousel"></div>
-  
-      <div class="left-arrow owl-next">
-        <img src="image/right.png">
-      </div>
-    </div>
-  </div>
-  <div class="mapping1">
-    <h1 class="yellowh1">Тун удахгүй манай дэлгэцнээ</h1>
-  </div>
-  <!-- <div class="para"></div> -->
-  <div id="parallax-container">
-  </div>
-  <footer>
-    <div class="footer-container">
-      <div class="logo">
-        <img class="responsive" src="image/logo.png" alt="">
-      </div>
-      <div class="contact-container">
-        <div class="contact">
-          <img src="image/mail.png">
-          <p>И-мэйл info@primecineplex.mn</p>
+      <div class="main">
+        <div class="info">
+          <h1 id="movie-name" class="movie-name"></h1>
+          <p id="description" class="description"></p>
+          <br />
+          <div>
+            <span id="rating" class="rating"></span>
+            <a id="link" class="button" href="">
+              <img src="image/play.png" />
+              <span>WATCH TRAILER</span>
+            </a>
+          </div>
         </div>
-        <div class="contact">
-          <img src="image/address.png">
-          <p>Монгол улс, Улаанбаатар хот, Хан-Уул дүүрэг 11-р хороо, Дүнжингаравын гудамж, Зайсан Хилл Цогцолбор, 1-р давхар</p>
+        <div id="indicator-container" class="indicator-container"></div>
+      </div>
+      <div id="next-btn" class="right-arrow">
+        <img src="image/right-arrow.png" alt="" />
+      </div>
+    </header>
+    <div id="order" class="ticket nicebackround">
+      <div>
+        <div class="mapping">
+          <h1 class="yellowh1">Манай дэлгэцнээ</h1>
         </div>
-        <div class="contact">
-          <img  src="image/phone.png">
-          <p>+976-7510-0000</p>
+        <div class="active">
+          <div class="details">
+            <p id="genre" class="yellowp"></p>
+            <h1 id="owlname" class="movie-name"></h1>
+            <img src="image/5star.png" />
+            <p id="owldesc" class="description"></p>
+            <a id="ticketlink" class="button" href="movie.html">
+              <span>Тасалбар захиалах</span>
+            </a>
+          </div>
+          <div class="current-container responsive">
+            <img id="current-image" src="" />
+          </div>
         </div>
       </div>
-    </div>
-    <div class="copyright">
-      2018 © Южинтек Өү Юү Жи ХХК / Зохиогчийн эрх хуулиар хамгаалагдсан.
-    </div>
-  </footer>
-<script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script src="js/interest.js"></script>
-<script src="js/readymovies.js"></script>
-<script src="js/parallax.js"></script>
-<script src="js/navbar.js"></script>
-<script src="js/pop.js"></script>
-</body>
-</html> 
 
+      <div class="owl">
+        <div class="left-arrow owl-prev">
+          <img src="image/left.png" alt="" />
+        </div>
+
+        <div class="owl-carousel"></div>
+
+        <div class="left-arrow owl-next">
+          <img src="image/right.png" />
+        </div>
+      </div>
+    </div>
+    <div class="mapping1">
+      <h1 class="yellowh1">Тун удахгүй манай дэлгэцнээ</h1>
+    </div>
+    <!-- <div class="para"></div> -->
+    <div id="parallax-container"></div>
+    <footer>
+      <div class="footer-container">
+        <div class="logo">
+          <img class="responsive" src="image/logo.png" alt="" />
+        </div>
+        <div class="contact-container">
+          <div class="contact">
+            <img src="image/mail.png" />
+            <p>И-мэйл info@primecineplex.mn</p>
+          </div>
+          <div class="contact">
+            <img src="image/address.png" />
+            <p>
+              Монгол улс, Улаанбаатар хот, Хан-Уул дүүрэг 11-р хороо,
+              Дүнжингаравын гудамж, Зайсан Хилл Цогцолбор, 1-р давхар
+            </p>
+          </div>
+          <div class="contact">
+            <img src="image/phone.png" />
+            <p>+976-7510-0000</p>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        2018 © Южинтек Өү Юү Жи ХХК / Зохиогчийн эрх хуулиар хамгаалагдсан.
+      </div>
+    </footer>
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/interest.js"></script>
+    <script src="js/readymovies.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/navbar.js"></script>
+  </body>
+</html>
