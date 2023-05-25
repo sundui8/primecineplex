@@ -20,7 +20,13 @@
 .responsive {
   max-width: 100%;
   height: auto;
-  
+}
+.yellowh1 {
+  display: inline;
+  border-bottom: 10px solid #ec7532;
+}
+.yellowp {
+  color: #ec7532;
 }
 p {
   font-size: 18px;
@@ -215,13 +221,7 @@ li > a:hover:after {
   grid-template-columns: 90%;
   justify-content: space-evenly;
 }
-.yellowh1 {
-  display: inline;
-  border-bottom: 10px solid #ec7532;
-}
-.yellowp {
-  color: #ec7532;
-}
+
 .details {
   display: flex;
   flex-direction: column;
@@ -406,7 +406,6 @@ lord-icon {
   align-items: center;
 }
 .contact > p {
-  font-size: 15px;
   height: 5rem;
   text-align: center;
 }
@@ -416,4 +415,7 @@ lord-icon {
 .copyright {
   text-align: center;
   opacity: 0.5;
+}
+footer * {
+  font-size: 0.9em;
 }

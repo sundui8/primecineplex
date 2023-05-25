@@ -16,9 +16,6 @@ header{
 .movie-container > div {
     margin: 5%;
 }
-.movie-container p{
-    font-size: 1.2  vmax;
-}
 #genre > p{
     margin-right: 10px;
     font-family: 'Roboto Condensed', sans-serif;
