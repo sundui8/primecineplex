@@ -6,7 +6,7 @@ $.getJSON("json/readymovies.json", function (dat) {
     owlHTML +=
       '<div class="item" data-idex="' +
       i +
-      '"><img  class="imgitem" src="' +
+      '"><img alt="movie" class="imgitem" src="' +
       dat[i].urlp +
       '"><div class="overlay unselected"></div></div>';
   }

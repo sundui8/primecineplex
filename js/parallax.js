@@ -14,7 +14,7 @@ fetch('json/readymovies.json')
         </p>
       </div>
       <lord-icon src="https://cdn.lordicon.com/dpohzien.json" trigger="hover" colors="primary:#ffffff" state="hover" style="width:100px;height:100px"></lord-icon>
-      <a href="">
+      <a href="index.html">
         Дэлгэрэнгүй
       </a> 
       </div>`;
