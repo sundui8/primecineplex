@@ -28,6 +28,9 @@
 .yellowp {
   color: #ec7532;
 }
+.explicit-size{
+  object-fit: cover;
+}
 p {
   font-size: 18px;
   display: block;
